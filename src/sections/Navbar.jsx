@@ -29,7 +29,7 @@ const Navbar = () => {
             href="/"
             className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
           >
-            Nipun
+            Nipun Taneja
           </a>
           {/* Menu Button */}
           <button
