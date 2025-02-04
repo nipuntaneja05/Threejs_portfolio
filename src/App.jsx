@@ -7,6 +7,7 @@ import Clients from './sections/Clients'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import Experience from './sections/Experience'
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
