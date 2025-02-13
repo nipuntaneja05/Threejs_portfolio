@@ -170,43 +170,48 @@ export const navLinks = [
     //     },
     //   ],
     // },
-    // {
-    //   title: 'Horizon - Online Banking Platform',
-    //   desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    //   subdesc:
-    //     'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    //   href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    //   texture: '/textures/project/project4.mp4',
-    //   logo: '/assets/project-logo4.png',
-    //   logoStyle: {
-    //     backgroundColor: '#0E1F38',
-    //     border: '0.2px solid #0E2D58',
-    //     boxShadow: '0px 0px 60px 0px #2F67B64D',
-    //   },
-    //   spotlight: '/assets/spotlight4.png',
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: '/assets/react.svg',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'TailwindCSS',
-    //       path: 'assets/tailwindcss.png',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'TypeScript',
-    //       path: '/assets/typescript.png',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Framer Motion',
-    //       path: '/assets/framer.png',
-    //     },
-    //   ],
-    // },
+    {
+      "title": "MediGyaan AI - Medical Knowledge Chatbot",
+      "desc": "MediGyaan AI is an advanced AI-powered medical chatbot designed to provide precise answers to medicine-related queries. It processes medical textbooks, extracts knowledge, and enables users to get reliable insights in real time.",
+      "subdesc": "Built with FastAPI, Groq API, Pinecone, and React, MediGyaan AI leverages NLP and vector search for efficient medical information retrieval.",
+      "href": "https://medigyaan-ai.vercel.app/",  
+      "texture": "/textures/project/MediGyaanAI.mp4",
+      "logo": "/assets/medigyaan-logo.png",
+      "logoStyle": {
+        "backgroundColor": "#16213E",
+        "border": "0.2px solid #1A2A52",
+        "boxShadow": "0px 0px 60px 0px #2F67B64D"
+      },
+      "spotlight": "/assets/spotlight1.png",
+      "tags": [
+        {
+          "id": 1,
+          "name": "FastAPI",
+          "path": "/assets/fastapi.png"
+        },
+        {
+          "id": 2,
+          "name": "Groq API",
+          "path": "/assets/groq.png"
+        },
+        {
+          "id": 3,
+          "name": "Pinecone",
+          "path": "/assets/pinecone.png"
+        },
+        {
+          "id": 4,
+          "name": "React",
+          "path": "/assets/react.svg"
+        },
+      
+        {
+          "id": 6,
+          "name": "NLP",
+          "path": "/assets/nlp.png"
+        },
+      ],
+    },
     {
       title: 'Requesto - Android and IOS App',
       desc: 'Requesto is a revolutionary Software-as-a-Service platform that transforms the way people get their problems solved in a vicinity. It is an Uber-like platform for requests.Where anyone who faces any problem can post in on request board and anyone else who can solve it can offer their services and connect through our platform.',
