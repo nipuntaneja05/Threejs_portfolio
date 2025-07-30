@@ -19,6 +19,11 @@ export const navLinks = [
       name: 'Contact',
       href: '#contact',
     },
+    {
+      id: 5,
+      name: 'Resume',
+      href: 'https://drive.google.com/file/d/1pbXw2VB97jb2ZxcTlHiMjyNB_oi1LiUx/view?usp=sharing',
+    }
   ];
   
   export const clientReviews = [
@@ -62,7 +67,7 @@ export const navLinks = [
       desc: 'Requesto is a revolutionary Software-as-a-Service platform that transforms the way people get their problems solved in a vicinity. It is an Uber-like platform for requests.Where anyone who faces any problem can post in on request board and anyone else who can solve it can offer their services and connect through our platform.',
       subdesc:
         'Built as a unique Software-as-a-Service app with React.js , MongoDB, Expressjs, Node.js (MERN)',
-      href: 'https://www.requesto.in',
+      href: 'https://drive.google.com/file/d/1d18fxjWiwiZNsBXEggd6VoqiZvPlVrvN/view?usp=sharing',
       texture: '/textures/project/project1.mp4',
       logo: '/assets/project-logo1.png',
       logoStyle: {
@@ -94,87 +99,87 @@ export const navLinks = [
         },
       ],
     },
-    // {
-    //   title: 'LiveDoc - Real-Time Google Docs Clone',
-    //   desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    //   subdesc:
-    //     'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    //   href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    //   texture: '/textures/project/project2.mp4',
-    //   logo: '/assets/project-logo2.png',
-    //   logoStyle: {
-    //     backgroundColor: '#13202F',
-    //     border: '0.2px solid #17293E',
-    //     boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    //   },
-    //   spotlight: '/assets/spotlight2.png',
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: '/assets/react.svg',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'TailwindCSS',
-    //       path: 'assets/tailwindcss.png',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'TypeScript',
-    //       path: '/assets/typescript.png',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Framer Motion',
-    //       path: '/assets/framer.png',
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: 'CarePulse - Health Management System',
-    //   desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-    //   subdesc:
-    //     'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    //   href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    //   texture: '/textures/project/project3.mp4',
-    //   logo: '/assets/project-logo3.png',
-    //   logoStyle: {
-    //     backgroundColor: '#60f5a1',
-    //     background:
-    //       'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-    //     border: '0.2px solid rgba(208, 213, 221, 1)',
-    //     boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-    //   },
-    //   spotlight: '/assets/spotlight3.png',
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: '/assets/react.svg',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'TailwindCSS',
-    //       path: 'assets/tailwindcss.png',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'TypeScript',
-    //       path: '/assets/typescript.png',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Framer Motion',
-    //       path: '/assets/framer.png',
-    //     },
-    //   ],
-    // },
+    {
+      title: 'Visualizer.ai',
+      desc: 'Visualizer.ai is a friendly tool that transforms messy spreadsheets into clear, stunning visuals — no coding or formulas needed. Just upload your data, and get instant, clean charts. ',
+      subdesc:
+        'Just ask in plain English — thanks to built-in NLP and powerful language models, the platform understands what you mean and updates your charts instantly. Whether you are a founder, marketer, or student, Visualizer.ai helps you understand your data without the overwhelm.Built with React.js, Groq API (Llama3-70b-8192), and fastAPI.',
+      href: 'https://drive.google.com/file/d/1O2h-wnymGDz0J-AeIukzP2hwu3Mel-bs/view?usp=sharing',
+      texture: '/textures/project/project2.mp4',
+      logo: '/assets/project-logo2.ico',
+      logoStyle: {
+        backgroundColor: '#13202F',
+        border: '0.2px solid #17293E',
+        boxShadow: '0px 0px 60px 0px #2F6DB54D',
+      },
+      spotlight: '/assets/spotlight2.png',
+      tags: [
+        {
+          id: 1,
+          name: 'React.js',
+          path: '/assets/react.svg',
+        },
+        {
+          id: 2,
+          name: 'TailwindCSS',
+          path: 'assets/tailwindcss.png',
+        },
+        {
+          id: 3,
+          name: 'groq',
+          path: '/assets/groq.png',
+        },
+        {
+          id: 4,
+          name: 'fastAPI',
+          path: '/assets/fastapi.png',
+        },
+      ],
+    },
+    {
+      title: 'Discord-Role Manager',
+      desc: 'Smart role automation powered by natural language ,Tired of complex role commands and manual member management? This AI-powered agent lets Discord moderators assign, update, or remove roles just by typing what they want-',
+      subdesc:
+        'like “Give Member role to users with more than 10 messages”. It uses natural language processing and real-time data to make community management smoother, faster, and smarter.Made with Discord.js, Groq API(llama3-70b-8192), and React.js.',
+      href: 'https://drive.google.com/file/d/1wuHSETyBl1ob7KEU-MVBRLD4ztu7fGik/view?usp=sharing',
+      texture: '/textures/project/project3.mp4',
+      logo: '/assets/discord-logo.jpeg',
+      logoStyle: {
+        backgroundColor: '#60f5a1',
+        background:
+          'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+        border: '0.2px solid rgba(208, 213, 221, 1)',
+        boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+      },
+      spotlight: '/assets/spotlight3.png',
+      tags: [
+        {
+          id: 1,
+          name: 'React.js',
+          path: '/assets/react.svg',
+        },
+        {
+          id: 2,
+          name: 'TailwindCSS',
+          path: 'assets/tailwindcss.png',
+        },
+        {
+          id: 3,
+          name: 'Discord.js',
+          path: '/assets/discord-logo.jpeg',
+        },
+        {
+          id: 4,
+          name: 'Groq API',
+          path: '/assets/groq.png',
+        },
+      ],
+    },
     {
       "title": "MediGyaan AI - Medical Knowledge Chatbot",
       "desc": "MediGyaan AI is an advanced AI-powered medical chatbot designed to provide precise answers to medicine-related queries. It processes medical textbooks, extracts knowledge, and enables users to get reliable insights in real time.",
       "subdesc": "Built with FastAPI, Groq API, Pinecone, and React, MediGyaan AI leverages NLP and vector search for efficient medical information retrieval.",
-      "href": "https://medigyaan-ai.vercel.app/",  
+      "href": "https://drive.google.com/file/d/1wowL6gadSx1Y8lT-rFMafuBNXr1y1Tnp/view?usp=sharing",  
       "texture": "/textures/project/MediGyaanAI.mp4",
       "logo": "/assets/medigyaan-logo.png",
       "logoStyle": {
@@ -212,43 +217,43 @@ export const navLinks = [
         },
       ],
     },
-    {
-      title: 'Requesto - Android and IOS App',
-      desc: 'Requesto is a revolutionary Software-as-a-Service platform that transforms the way people get their problems solved in a vicinity. It is an Uber-like platform for requests.Where anyone who faces any problem can post in on request board and anyone else who can solve it can offer their services and connect through our platform.',
-      subdesc:
-        'Built as a unique Software-as-a-Service app with REACT NATIVE , MongoDB, Expressjs, Node.js (MERN)',
-      href: 'https://www.requesto.in',
-      texture: '/textures/project/project5.mp4',
-      logo: '/assets/project-logo1.png',
-      logoStyle: {
-        backgroundColor: '#1C1A43',
-        border: '0.2px solid #252262',
-        boxShadow: '0px 0px 60px 0px #635BFF4D',
-      },
-      spotlight: '/assets/spotlight5.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'MONGOdb',
-          path: 'assets/mongoDB.png',
-        },
-        {
-          id: 3,
-          name: 'nodeJS',
-          path: '/assets/nodeJS.png',
-        },
-        {
-          id: 4,
-          name: 'expressJS',
-          path: '/assets/expressJS.png',
-        },
-      ],
-    },
+    // {
+    //   title: 'Requesto - Android and IOS App',
+    //   desc: 'Requesto is a revolutionary Software-as-a-Service platform that transforms the way people get their problems solved in a vicinity. It is an Uber-like platform for requests.Where anyone who faces any problem can post in on request board and anyone else who can solve it can offer their services and connect through our platform.',
+    //   subdesc:
+    //     'Built as a unique Software-as-a-Service app with REACT NATIVE , MongoDB, Expressjs, Node.js (MERN)',
+    //   href: 'https://www.requesto.in',
+    //   texture: '/textures/project/project5.mp4',
+    //   logo: '/assets/project-logo1.png',
+    //   logoStyle: {
+    //     backgroundColor: '#1C1A43',
+    //     border: '0.2px solid #252262',
+    //     boxShadow: '0px 0px 60px 0px #635BFF4D',
+    //   },
+    //   spotlight: '/assets/spotlight5.png',
+    //   tags: [
+    //     {
+    //       id: 1,
+    //       name: 'React.js',
+    //       path: '/assets/react.svg',
+    //     },
+    //     {
+    //       id: 2,
+    //       name: 'MONGOdb',
+    //       path: 'assets/mongoDB.png',
+    //     },
+    //     {
+    //       id: 3,
+    //       name: 'nodeJS',
+    //       path: '/assets/nodeJS.png',
+    //     },
+    //     {
+    //       id: 4,
+    //       name: 'expressJS',
+    //       path: '/assets/expressJS.png',
+    //     },
+    //   ],
+    // },
   ];
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
@@ -265,11 +270,11 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
-      name: 'Excited to work',
-      pos: 'In Leadership and Development roles.',
-      duration: '2025-future',
-      title: "I am deeply passionate about working in development and tech-related roles, regardless of the domain. I am always eager to learn, adapt, and improve. Startups and companies innovating with new ideas and projects truly inspire me, and I would be thrilled to collaborate with highly intelligent and driven individuals. While I may not have all the answers upfront, I am relentless in finding solutions and implementing what is needed to drive success.",
-      icon: '/assets/Nlogo.jpg',
+      name: 'Grovio.ai',
+      pos: 'AI and Full stack developer.',
+      duration: 'March 2025- June 2025',
+      title: "Actively worked in Grovio.ai as an AI and full stack developer,particularly working on AI agents for automating online communities on different platforms like discord and telegram.Working on different agents along with machine learning models to automate tasks and make community management easier.Working under great professionals who have earlier worked in Uber,tiktok,Oracle was a lovely and learning experience.",
+      icon: '/assets/grovio-logo.jpeg',
       animation: 'victory',
     },
     {

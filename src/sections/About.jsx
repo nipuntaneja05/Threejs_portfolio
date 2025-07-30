@@ -35,7 +35,7 @@ const About = () => {
               <div>
                 <p className="grid-headtext">Hi, I’m Nipun Taneja</p>
                 <p className="grid-subtext">
-                  With passion for innovation, I specialize in building scalable web and mobile applications with a keen interest in AI/ML.
+                  With passion for innovation, I specialize in building scalable web applications along with main focus on AI agents and machine learning solutions.
                 </p>
               </div>
             </div>
@@ -52,7 +52,7 @@ const About = () => {
               <div>
                 <p className="grid-headtext">Tech Stack</p>
                 <p className="grid-subtext">
-                  I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications such as MERN stack and REACT NATIVE.
+                  I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications such as MERN,Next.js,RAG,LLMs,AI agents,machine learning.
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ const About = () => {
               <div>
                 <p className="grid-headtext">My Passion for Technology</p>
                 <p className="grid-subtext">
-                  I love solving problems and building things. I find Programming one of the best ways to express this. I enjoy exploring new technologies and enhancing my skills.
+                  I love building innovative solutions that solve real-world problems. All my projects are driven by a desire to create impactful applications that enhance user experiences and streamline processes.I mainly focus on AI related projects.
                 </p>
               </div>
             </div>
