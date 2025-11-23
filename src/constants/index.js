@@ -22,7 +22,7 @@ export const navLinks = [
     {
       id: 5,
       name: 'Resume',
-      href: 'https://drive.google.com/file/d/1pbXw2VB97jb2ZxcTlHiMjyNB_oi1LiUx/view?usp=sharing',
+      href: 'https://drive.google.com/file/d/1G2zt12CNQYh7I9GuNo16icgr-DzuFFou/view?usp=sharing',
     }
   ];
   
@@ -104,7 +104,7 @@ export const navLinks = [
       desc: 'Visualizer.ai is a friendly tool that transforms messy spreadsheets into clear, stunning visuals — no coding or formulas needed. Just upload your data, and get instant, clean charts. ',
       subdesc:
         'Just ask in plain English — thanks to built-in NLP and powerful language models, the platform understands what you mean and updates your charts instantly. Whether you are a founder, marketer, or student, Visualizer.ai helps you understand your data without the overwhelm.Built with React.js, Groq API (Llama3-70b-8192), and fastAPI.',
-      href: 'https://drive.google.com/file/d/1O2h-wnymGDz0J-AeIukzP2hwu3Mel-bs/view?usp=sharing',
+      href: 'https://youtu.be/-q0uwwpUBn4?si=-kYnVZ7iKO5NLdp7',
       texture: '/textures/project/project2.mp4',
       logo: '/assets/project-logo2.ico',
       logoStyle: {
@@ -217,43 +217,85 @@ export const navLinks = [
         },
       ],
     },
-    // {
-    //   title: 'Requesto - Android and IOS App',
-    //   desc: 'Requesto is a revolutionary Software-as-a-Service platform that transforms the way people get their problems solved in a vicinity. It is an Uber-like platform for requests.Where anyone who faces any problem can post in on request board and anyone else who can solve it can offer their services and connect through our platform.',
-    //   subdesc:
-    //     'Built as a unique Software-as-a-Service app with REACT NATIVE , MongoDB, Expressjs, Node.js (MERN)',
-    //   href: 'https://www.requesto.in',
-    //   texture: '/textures/project/project5.mp4',
-    //   logo: '/assets/project-logo1.png',
-    //   logoStyle: {
-    //     backgroundColor: '#1C1A43',
-    //     border: '0.2px solid #252262',
-    //     boxShadow: '0px 0px 60px 0px #635BFF4D',
-    //   },
-    //   spotlight: '/assets/spotlight5.png',
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: '/assets/react.svg',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'MONGOdb',
-    //       path: 'assets/mongoDB.png',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'nodeJS',
-    //       path: '/assets/nodeJS.png',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'expressJS',
-    //       path: '/assets/expressJS.png',
-    //     },
-    //   ],
-    // },
+    {
+      "title": "INDRA-Initiative for National Drainage and Rainwater Acquisition",
+      "desc": "A full-stack platform leveraging a fusion of geospatial data, predictive ML, and graph AI to deliver hyper-personalized feasibility analysis, optimized design, and interactive simulation for rainwater harvesting systems.",
+      "subdesc": "A unified geospatial intelligence platform built with FastAPI, Python, Neo4j, and Pinecone that analyzes drainage networks, predicts water-flow behavior, and optimizes rainwater harvesting across regions. INDRA combines GIS analytics, ML-driven simulations, 3D modeling, and a dual-AI knowledge base to deliver accurate system insights to both web (ReactJS) and Android (Kotlin MVVM) apps. With automated vision-based dimensioning and community-intelligence optimization, INDRA enables smarter, data-driven planning for water conservation and flood mitigation at national scale.",
+      "href": "https://youtu.be/nyicCNgbljc?si=C79Um2PUW1mcZ-Iz",  
+      "texture": "/textures/project/INDRADEMO.mp4",
+      "logo": "/assets/INDRALOGO.png",
+      "logoStyle": {
+        "backgroundColor": "#16213E",
+        "border": "0.2px solid #1A2A52",
+        "boxShadow": "0px 0px 60px 0px #2F67B64D"
+      },
+      "spotlight": "/assets/spotlight1.png",
+      "tags": [
+        {
+          "id": 1,
+          "name": "FastAPI",
+          "path": "/assets/fastapi.png"
+        },
+        {
+          "id": 2,
+          "name": "NEO4J",
+          "path": "/assets/neo4jlogo.png"
+        },
+        {
+          "id": 3,
+          "name": "Pinecone",
+          "path": "/assets/pinecone.png"
+        },
+        {
+          "id": 4,
+          "name": "React",
+          "path": "/assets/react.svg"
+        },
+      
+        {
+          "id": 6,
+          "name": "NLP",
+          "path": "/assets/nlp.png"
+        },
+      ],
+    },
+    {
+      title: 'PRISM-Predictive Risk Intelligince through Social Mobility',
+      desc: 'PRISM (Predictive Risk Intelligence through Social Mobility) revolutionizes credit risk assessment by introducing Life Entropy Scoring - a novel approach that measures the predictability and stability of an individuals life patterns to determine creditworthiness.',
+      subdesc:
+        'Built as a unique software for Bank Of India based on pure machine learning models/algorithms using GNN,TensorFlow..etc (Won around 4000$ for this project)',
+      href: 'https://github.com/nipuntaneja05/PRISM-IITH',
+      texture: '/textures/project/PRISMDEMO.mp4',
+      logo: '/assets/PRISMLOGO.png',
+      logoStyle: {
+        backgroundColor: '#1C1A43',
+        border: '0.2px solid #252262',
+        boxShadow: '0px 0px 60px 0px #635BFF4D',
+      },
+      spotlight: '/assets/spotlight5.png',
+      tags: [
+        {
+          id: 7,
+          name: 'React.js',
+          path: '/assets/react.svg',
+        },
+        {
+          id: 2,
+          name: 'MONGOdb',
+          path: 'assets/mongoDB.png',
+        },
+        {
+          id: 3,
+          name: 'nodeJS',
+          path: '/assets/nodeJS.png',
+        },
+        {
+          id: 4,
+          name: 'Pytorch',
+          path: '/assets/pytorchlogo.png',
+        },
+      ],
+    },
   ];
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
