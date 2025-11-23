@@ -6,7 +6,9 @@ import { useGSAP } from "@gsap/react";
 const Target = (props) => {
   const targetRef = useRef();
   const { scene } = useGLTF(
-    "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf"
+    // "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf"
+    // "https://models.readyplayer.me/64182b64195c81e5a2122b97.glb"
+    "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf"
   );
 
   useGSAP(() => {
