@@ -17,7 +17,7 @@ const WorkExperience = () => {
         <p className="head-text">My Work Experience</p>
 
         <div className="work-container">
-          <div ref={canvasRef} className="work-canvas overflow-hidden">
+          <div ref={canvasRef} className="work-canvas overflow-hidden h-80 sm:h-96 lg:h-full min-h-[300px] lg:min-h-0">
             <Canvas
               dpr={[1, 1.5]}
               frameloop={isInView ? 'always' : 'never'}

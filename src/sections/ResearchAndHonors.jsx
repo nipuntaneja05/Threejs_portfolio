@@ -54,9 +54,9 @@ const ResearchAndHonors = () => {
                 className="bg-black-200 border border-black-300 rounded-lg p-4 flex flex-col justify-between hover:border-black-500 transition-all duration-300"
               >
                 <div>
-                  <div className="flex items-center justify-between gap-2 mb-1.5">
-                    <p className="text-sm font-semibold text-white truncate">{item.title}</p>
-                    <span className="text-[11px] font-medium px-2 py-0.5 rounded bg-black-300 text-white-700 whitespace-nowrap">
+                  <div className="flex items-start sm:items-center justify-between gap-2 mb-1.5">
+                    <p className="text-sm font-semibold text-white leading-tight">{item.title}</p>
+                    <span className="text-[11px] font-medium px-2 py-0.5 rounded bg-black-300 text-white-700 whitespace-nowrap shrink-0">
                       {item.badge}
                     </span>
                   </div>

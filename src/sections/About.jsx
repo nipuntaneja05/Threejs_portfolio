@@ -143,7 +143,7 @@ const About = () => {
         {/* Card 3 */}
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ease-in-out">
-            <div ref={globeContainerRef} className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+            <div ref={globeContainerRef} className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center overflow-hidden max-w-full">
               <Globe
                 ref={globeRef}
                 height={326}
@@ -210,7 +210,7 @@ const About = () => {
               <p className="grid-subtext text-center">Get in touch directly</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">nipuntaneja05@gmail.com</p>
+                <p className="text-sm sm:text-base md:text-xl lg:text-2xl font-medium text-gray_gradient text-white break-all sm:break-normal">nipuntaneja05@gmail.com</p>
               </div>
             </div>
           </div>

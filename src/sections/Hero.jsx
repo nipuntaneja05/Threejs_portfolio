@@ -30,8 +30,8 @@ const Hero = () => {
         <p className="hero_tag text-gray_gradient">
           Applied Scientist & AI Engineer
         </p>
-        <div className="flex justify-center -mt-1">
-          <p className="inline-block px-5 py-2 rounded-full bg-black-200/90 border border-black-300/80 backdrop-blur-md shadow-2xl text-center text-sm md:text-base font-semibold text-neutral-200 tracking-wide">
+        <div className="flex justify-center -mt-1 px-2">
+          <p className="inline-block px-4 py-2 sm:px-5 rounded-2xl sm:rounded-full bg-black-200/90 border border-black-300/80 backdrop-blur-md shadow-2xl text-center text-xs sm:text-sm md:text-base font-semibold text-neutral-200 tracking-wide max-w-full">
             Architecting LLM Multi-Agent Systems, RAG Platforms & Scalable AI
           </p>
         </div>
