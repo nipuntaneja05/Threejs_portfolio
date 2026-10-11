@@ -45,12 +45,25 @@ const Contact = () => {
         setForm({ name: '', email: '', message: '' });
       }, 3000);
     } catch (error) {
-      console.error(error);
+      console.error('EmailJS Error:', error);
+      const isGrantError = error?.text?.includes('Invalid grant') || error?.status === 412;
       showAlert({
         show: true,
-        text: "I didn't receive your message 😢",
+        text: isGrantError
+          ? "Email service needs reconnection. Opening mail client..."
+          : "Couldn't send automatically. Opening your email app...",
         type: 'danger',
       });
+
+      // Graceful fallback: open default email client with message pre-filled
+      const mailtoUrl = `mailto:nipuntaneja05@gmail.com?subject=${encodeURIComponent(
+        `Portfolio Inquiry from ${form.name || 'Visitor'}`
+      )}&body=${encodeURIComponent(
+        `From: ${form.name} (${form.email})\n\n${form.message}`
+      )}`;
+      setTimeout(() => {
+        window.open(mailtoUrl, '_blank');
+      }, 1800);
     } finally {
       setLoading(false);
     }

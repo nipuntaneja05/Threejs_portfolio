@@ -11,37 +11,34 @@ const Developer = ({ animationName, ...props }) => {
   const idleAnimation = useFBX("/models/animations/salute.fbx");
 
   // Ensure idleAnimation has the correct structure
-  if (idleAnimation.animations) {
-    console.log("Loaded FBX Animations:", idleAnimation.animations);
-    idleAnimation.animations[0].name = "idle"; // Ensure the name is set
-  } else {
-    console.error("Idle animation does not contain animations:", idleAnimation);
+  if (idleAnimation.animations && !idleAnimation.animations[0].name) {
+    idleAnimation.animations[0].name = "idle";
   }
 
   // Bind animations to the group
   const { actions } = useAnimations(idleAnimation.animations || [], group);
 
   useEffect(() => {
-    console.log("Available Actions:", actions);
-    console.log("Requested Animation Name:", animationName);
-
-    // Check if the requested animation exists
-    if (actions && actions[animationName]) {
-      actions[animationName].reset().fadeIn(0.5).play();
+    const action = actions?.[animationName] || actions?.['idle'];
+    if (action) {
+      try {
+        action.reset().fadeIn(0.5).play();
+      } catch (err) {
+        console.warn("Animation play error:", err);
+      }
 
       return () => {
-        actions[animationName].fadeOut(0.5); // Cleanup animation
+        try {
+          action.fadeOut(0.5);
+        } catch (err) {
+          // Safe unmount
+        }
       };
-    } else {
-      console.warn(`Animation "${animationName}" not found.`);
     }
   }, [animationName, actions]);
 
   return (
     <group {...props} dispose={null} ref={group}>
-      {/* Debugging loaded nodes */}
-      {console.log("Loaded Nodes:", nodes)}
-      {console.log("Loaded Materials:", materials)}
 
       {/* GLTF nodes and skinned meshes */}
       <primitive object={nodes.Hips} />

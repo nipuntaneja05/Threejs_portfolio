@@ -1,16 +1,24 @@
 import React, { useState } from "react";
 import { navLinks } from "../constants/index";
 
-const NavItems = () => {
+const NavItems = ({ onItemClick }) => {
   return (
     <ul className="nav-ul">
-      {navLinks.map(({ id, href, name }) => (
-        <li key={id} className="nav-li">
-          <a href={href} className="nav-li_a" onClick={() => {}}>
-            {name}
-          </a>
-        </li>
-      ))}
+      {navLinks.map(({ id, href, name }) => {
+        const isExternal = href.startsWith("http");
+        return (
+          <li key={id} className="nav-li">
+            <a
+              href={href}
+              className="nav-li_a"
+              onClick={onItemClick}
+              {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            >
+              {name}
+            </a>
+          </li>
+        );
+      })}
     </ul>
   );
 };
@@ -19,14 +27,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen);
+  const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md transform-gpu">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto px-5">
           {/* Logo */}
           <a
-            href="/"
+            href="#home"
             className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
           >
             Nipun Taneja
@@ -56,7 +65,7 @@ const Navbar = () => {
         } overflow-hidden transition-all duration-300 sm:hidden`}
       >
         <nav className="p-5">
-          <NavItems />
+          <NavItems onItemClick={closeMenu} />
         </nav>
       </div>
     </header>

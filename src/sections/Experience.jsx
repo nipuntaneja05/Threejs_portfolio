@@ -4,10 +4,12 @@ import { OrbitControls } from '@react-three/drei';
 
 import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
+import useInView from '../hooks/useInView.js';
 import { workExperiences } from '../constants/index.js';
 
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');
+  const [canvasRef, isInView] = useInView({ threshold: 0.05, rootMargin: '100px' });
 
   return (
     <section className="c-space my-20" id="work">
@@ -15,8 +17,12 @@ const WorkExperience = () => {
         <p className="head-text">My Work Experience</p>
 
         <div className="work-container">
-          <div className="work-canvas">
-            <Canvas>
+          <div ref={canvasRef} className="work-canvas overflow-hidden">
+            <Canvas
+              dpr={[1, 1.5]}
+              frameloop={isInView ? 'always' : 'never'}
+              gl={{ powerPreference: 'high-performance', antialias: false, alpha: true, stencil: false }}
+            >
               <ambientLight intensity={7} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
               <directionalLight position={[10, 10, 10]} intensity={1} />
@@ -38,8 +44,14 @@ const WorkExperience = () => {
                   onPointerOut={() => setAnimationName('idle')}
                   className="work-content_container group">
                   <div className="flex flex-col h-full justify-start items-center py-2">
-                    <div className="work-content_logo">
-                      <img className="w-full h-full" src={item.icon} alt="" />
+                    <div className="work-content_logo flex items-center justify-center overflow-hidden rounded-2xl bg-white p-1">
+                      <img
+                        className={`w-full h-full object-contain ${
+                          item.name.toLowerCase().includes('amazon') ? 'scale-[1.8]' : ''
+                        }`}
+                        src={item.icon}
+                        alt={item.name}
+                      />
                     </div>
 
                     <div className="work-content_bar" />

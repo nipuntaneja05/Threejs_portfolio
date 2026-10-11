@@ -17,8 +17,16 @@ const DemoComputer = (props) => {
   useEffect(() => {
     if (txt) {
       txt.flipY = false;
+      const video = txt.image;
+      if (video && typeof video.play === 'function') {
+        if (props.isInView === false) {
+          video.pause();
+        } else {
+          video.play().catch(() => {});
+        }
+      }
     }
-  }, [txt]);
+  }, [txt, props.isInView]);
 
   useGSAP(() => {
     gsap.from(group.current.rotation, {

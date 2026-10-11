@@ -1,340 +1,322 @@
 export const navLinks = [
-    {
-      id: 1,
-      name: 'Home',
-      href: '#Home',
+  {
+    id: 1,
+    name: 'Home',
+    href: '#home',
+  },
+  {
+    id: 2,
+    name: 'About',
+    href: '#about',
+  },
+  {
+    id: 3,
+    name: 'Projects',
+    href: '#projects',
+  },
+  {
+    id: 4,
+    name: 'Experience',
+    href: '#work',
+  },
+  {
+    id: 5,
+    name: 'Research & Honors',
+    href: '#research',
+  },
+  {
+    id: 6,
+    name: 'Contact',
+    href: '#contact',
+  },
+  {
+    id: 7,
+    name: 'Resume',
+    href: 'https://drive.google.com/file/d/1wf7-bdfODg9busC7QduwMbC7663WG5D1/view?usp=sharing',
+  },
+];
+
+export const myProjects = [
+  {
+    title: 'Evermemos - AI Agent Long-Term Memory System',
+    desc: 'Evermemos is a state-of-the-art long-term memory system for AI agents that segments ongoing conversations via LLM topic-shift detection and distills them into structured units (episodes, atomic facts, and time-bounded foresights). It clusters memories into thematic profiles and dynamically resolves conflicting facts based on temporal recency.',
+    subdesc:
+      'Engineered hybrid retrieval fusing dense embeddings with BM25 via Reciprocal Rank Fusion (RRF), filters expired foresights, and incorporates an LLM context-sufficiency loop that iteratively rewrites queries until complete context is retrieved. Benchmarked across 500 conversations: achieved 84.8% fact deduplication (2,277 to 347) with a 4.1s average retrieval latency. Built with Python, Llama 3.3 70B (Groq), Qdrant, BM25, and Sentence Transformers.',
+    href: 'https://github.com/nipuntaneja05/Evermemos',
+    texture: '/textures/project/project1.mp4',
+    logo: '/assets/project-logo4.png',
+    logoStyle: {
+      backgroundColor: '#1E1B4B',
+      border: '0.2px solid #312E81',
+      boxShadow: '0px 0px 60px 0px rgba(99, 102, 241, 0.35)',
     },
-    {
-      id: 2,
-      name: 'About',
-      href: '#about',
-    },
-    {
-      id: 3,
-      name: 'Work',
-      href: '#work',
-    },
-    {
-      id: 4,
-      name: 'Contact',
-      href: '#contact',
-    },
-    {
-      id: 5,
-      name: 'Resume',
-      href: 'https://drive.google.com/file/d/1G2zt12CNQYh7I9GuNo16icgr-DzuFFou/view?usp=sharing',
-    }
-  ];
-  
-  export const clientReviews = [
-    {
-      id: 1,
-      name: 'Emily Johnson',
-      position: 'Marketing Director at GreenLeaf',
-      img: 'assets/review1.png',
-      review:
-        'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-    },
-    {
-      id: 2,
-      name: 'Mark Rogers',
-      position: 'Founder of TechGear Shop',
-      img: 'assets/review2.png',
-      review:
-        'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-    },
-    {
-      id: 3,
-      name: 'John Dohsas',
-      position: 'Project Manager at UrbanTech ',
-      img: 'assets/review3.png',
-      review:
-        'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-    },
-    {
-      id: 4,
-      name: 'Ether Smith',
-      position: 'CEO of BrightStar Enterprises',
-      img: 'assets/review4.png',
-      review:
-        'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-    },
-  ];
-  
-  export const myProjects = [
-    {
-      title: 'Requesto - Uber for requests',
-      desc: 'Requesto is a revolutionary Software-as-a-Service platform that transforms the way people get their problems solved in a vicinity. It is an Uber-like platform for requests.Where anyone who faces any problem can post in on request board and anyone else who can solve it can offer their services and connect through our platform.',
-      subdesc:
-        'Built as a unique Software-as-a-Service app with React.js , MongoDB, Expressjs, Node.js (MERN)',
-      href: 'https://drive.google.com/file/d/1d18fxjWiwiZNsBXEggd6VoqiZvPlVrvN/view?usp=sharing',
-      texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo1.png',
-      logoStyle: {
-        backgroundColor: '#2A1816',
-        border: '0.2px solid #36201D',
-        boxShadow: '0px 0px 60px 0px #AA3C304D',
+    spotlight: '/assets/spotlight4.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Groq API',
+        path: '/assets/groq.png',
       },
-      spotlight: '/assets/spotlight1.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'MONGOdb',
-          path: 'assets/mongoDB.png',
-        },
-        {
-          id: 3,
-          name: 'nodeJS',
-          path: '/assets/nodeJS.png',
-        },
-        {
-          id: 4,
-          name: 'expressJS',
-          path: '/assets/expressJS.png',
-        },
-      ],
-    },
-    {
-      title: 'Visualizer.ai',
-      desc: 'Visualizer.ai is a friendly tool that transforms messy spreadsheets into clear, stunning visuals — no coding or formulas needed. Just upload your data, and get instant, clean charts. ',
-      subdesc:
-        'Just ask in plain English — thanks to built-in NLP and powerful language models, the platform understands what you mean and updates your charts instantly. Whether you are a founder, marketer, or student, Visualizer.ai helps you understand your data without the overwhelm.Built with React.js, Groq API (Llama3-70b-8192), and fastAPI.',
-      href: 'https://youtu.be/-q0uwwpUBn4?si=-kYnVZ7iKO5NLdp7',
-      texture: '/textures/project/project2.mp4',
-      logo: '/assets/project-logo2.ico',
-      logoStyle: {
-        backgroundColor: '#13202F',
-        border: '0.2px solid #17293E',
-        boxShadow: '0px 0px 60px 0px #2F6DB54D',
+      {
+        id: 2,
+        name: 'NLP',
+        path: '/assets/nlp.png',
       },
-      spotlight: '/assets/spotlight2.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'groq',
-          path: '/assets/groq.png',
-        },
-        {
-          id: 4,
-          name: 'fastAPI',
-          path: '/assets/fastapi.png',
-        },
-      ],
-    },
-    {
-      title: 'Discord-Role Manager',
-      desc: 'Smart role automation powered by natural language ,Tired of complex role commands and manual member management? This AI-powered agent lets Discord moderators assign, update, or remove roles just by typing what they want-',
-      subdesc:
-        'like “Give Member role to users with more than 10 messages”. It uses natural language processing and real-time data to make community management smoother, faster, and smarter.Made with Discord.js, Groq API(llama3-70b-8192), and React.js.',
-      href: 'https://drive.google.com/file/d/1wuHSETyBl1ob7KEU-MVBRLD4ztu7fGik/view?usp=sharing',
-      texture: '/textures/project/project3.mp4',
-      logo: '/assets/discord-logo.jpeg',
-      logoStyle: {
-        backgroundColor: '#60f5a1',
-        background:
-          'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-        border: '0.2px solid rgba(208, 213, 221, 1)',
-        boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+      {
+        id: 3,
+        name: 'Pinecone / Vector DB',
+        path: '/assets/pinecone.png',
       },
-      spotlight: '/assets/spotlight3.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'Discord.js',
-          path: '/assets/discord-logo.jpeg',
-        },
-        {
-          id: 4,
-          name: 'Groq API',
-          path: '/assets/groq.png',
-        },
-      ],
-    },
-    {
-      "title": "MediGyaan AI - Medical Knowledge Chatbot",
-      "desc": "MediGyaan AI is an advanced AI-powered medical chatbot designed to provide precise answers to medicine-related queries. It processes medical textbooks, extracts knowledge, and enables users to get reliable insights in real time.",
-      "subdesc": "Built with FastAPI, Groq API, Pinecone, and React, MediGyaan AI leverages NLP and vector search for efficient medical information retrieval.",
-      "href": "https://drive.google.com/file/d/1wowL6gadSx1Y8lT-rFMafuBNXr1y1Tnp/view?usp=sharing",  
-      "texture": "/textures/project/MediGyaanAI.mp4",
-      "logo": "/assets/medigyaan-logo.png",
-      "logoStyle": {
-        "backgroundColor": "#16213E",
-        "border": "0.2px solid #1A2A52",
-        "boxShadow": "0px 0px 60px 0px #2F67B64D"
+      {
+        id: 4,
+        name: 'FastAPI',
+        path: '/assets/fastapi.png',
       },
-      "spotlight": "/assets/spotlight1.png",
-      "tags": [
-        {
-          "id": 1,
-          "name": "FastAPI",
-          "path": "/assets/fastapi.png"
-        },
-        {
-          "id": 2,
-          "name": "Groq API",
-          "path": "/assets/groq.png"
-        },
-        {
-          "id": 3,
-          "name": "Pinecone",
-          "path": "/assets/pinecone.png"
-        },
-        {
-          "id": 4,
-          "name": "React",
-          "path": "/assets/react.svg"
-        },
-      
-        {
-          "id": 6,
-          "name": "NLP",
-          "path": "/assets/nlp.png"
-        },
-      ],
+    ],
+  },
+  {
+    title: 'Visualizer.ai - Full-Stack Data & Analytics Platform',
+    desc: 'Visualizer.ai is an intelligent analytics platform that turns unstructured CSV or relational database data into rich, interactive Plotly dashboards with zero manual charting effort. Features automated data cleaning, statistical preprocessing, and ARIMA time-series forecasting.',
+    subdesc:
+      'Equipped with natural-language chart editing: users modify complex visualizations using conversational prompts. Includes a production-grade text-to-SQL module (powered by Gemini & MongoDB RAG) that translates natural-language inquiries into validated queries plotted instantaneously. Built with React, Vite, FastAPI, Pandas, Plotly, Llama 3 70B, and Gemini.',
+    href: 'https://github.com/nipuntaneja05/visualizer.ai',
+    texture: '/textures/project/project2.mp4',
+    logo: '/assets/project-logo2.ico',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
-    {
-      "title": "INDRA-Initiative for National Drainage and Rainwater Acquisition",
-      "desc": "A full-stack platform leveraging a fusion of geospatial data, predictive ML, and graph AI to deliver hyper-personalized feasibility analysis, optimized design, and interactive simulation for rainwater harvesting systems.",
-      "subdesc": "A unified geospatial intelligence platform built with FastAPI, Python, Neo4j, and Pinecone that analyzes drainage networks, predicts water-flow behavior, and optimizes rainwater harvesting across regions. INDRA combines GIS analytics, ML-driven simulations, 3D modeling, and a dual-AI knowledge base to deliver accurate system insights to both web (ReactJS) and Android (Kotlin MVVM) apps. With automated vision-based dimensioning and community-intelligence optimization, INDRA enables smarter, data-driven planning for water conservation and flood mitigation at national scale.",
-      "href": "https://youtu.be/nyicCNgbljc?si=C79Um2PUW1mcZ-Iz",  
-      "texture": "/textures/project/INDRADEMO.mp4",
-      "logo": "/assets/INDRALOGO.png",
-      "logoStyle": {
-        "backgroundColor": "#16213E",
-        "border": "0.2px solid #1A2A52",
-        "boxShadow": "0px 0px 60px 0px #2F67B64D"
+    spotlight: '/assets/spotlight2.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
       },
-      "spotlight": "/assets/spotlight1.png",
-      "tags": [
-        {
-          "id": 1,
-          "name": "FastAPI",
-          "path": "/assets/fastapi.png"
-        },
-        {
-          "id": 2,
-          "name": "NEO4J",
-          "path": "/assets/neo4jlogo.png"
-        },
-        {
-          "id": 3,
-          "name": "Pinecone",
-          "path": "/assets/pinecone.png"
-        },
-        {
-          "id": 4,
-          "name": "React",
-          "path": "/assets/react.svg"
-        },
-      
-        {
-          "id": 6,
-          "name": "NLP",
-          "path": "/assets/nlp.png"
-        },
-      ],
-    },
-    {
-      title: 'PRISM-Predictive Risk Intelligince through Social Mobility',
-      desc: 'PRISM (Predictive Risk Intelligence through Social Mobility) revolutionizes credit risk assessment by introducing Life Entropy Scoring - a novel approach that measures the predictability and stability of an individuals life patterns to determine creditworthiness.',
-      subdesc:
-        'Built as a unique software for Bank Of India based on pure machine learning models/algorithms using GNN,TensorFlow..etc (Won around 4000$ for this project)',
-      href: 'https://github.com/nipuntaneja05/PRISM-IITH',
-      texture: '/textures/project/PRISMDEMO.mp4',
-      logo: '/assets/PRISMLOGO.png',
-      logoStyle: {
-        backgroundColor: '#1C1A43',
-        border: '0.2px solid #252262',
-        boxShadow: '0px 0px 60px 0px #635BFF4D',
+      {
+        id: 2,
+        name: 'FastAPI',
+        path: '/assets/fastapi.png',
       },
-      spotlight: '/assets/spotlight5.png',
-      tags: [
-        {
-          id: 7,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'MONGOdb',
-          path: 'assets/mongoDB.png',
-        },
-        {
-          id: 3,
-          name: 'nodeJS',
-          path: '/assets/nodeJS.png',
-        },
-        {
-          id: 4,
-          name: 'Pytorch',
-          path: '/assets/pytorchlogo.png',
-        },
-      ],
+      {
+        id: 3,
+        name: 'Groq API',
+        path: '/assets/groq.png',
+      },
+      {
+        id: 4,
+        name: 'MongoDB',
+        path: '/assets/mongoDB.png',
+      },
+    ],
+  },
+  {
+    title: 'PRISM - Predictive Risk Intelligence via Social Mobility',
+    desc: 'PRISM revolutionizes traditional credit underwriting and risk assessment by introducing "Life Entropy Scoring" — a proprietary formulation that evaluates the stability and trajectory of personal mobility patterns to infer creditworthiness without relying exclusively on credit bureaus.',
+    subdesc:
+      'Engineered for Bank of India and selected as Winner of the Finshield Hackathon (IIT Hyderabad × Bank of India) with ~$4,000 in cash awards. Leverages Graph Neural Networks (GNNs), PyTorch, React.js, and MongoDB to assess non-linear financial patterns with industry-grade precision.',
+    href: 'https://github.com/nipuntaneja05/PRISM-IITH',
+    texture: '/textures/project/PRISMDEMO.mp4',
+    logo: '/assets/PRISMLOGO.png',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
     },
-  ];
-  
-  export const calculateSizes = (isSmall, isMobile, isTablet) => {
-    return {
-      deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-      deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-      cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-      reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-      targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
-    };
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      {
+        id: 1,
+        name: 'PyTorch',
+        path: '/assets/pytorchlogo.png',
+      },
+      {
+        id: 2,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 3,
+        name: 'MongoDB',
+        path: '/assets/mongoDB.png',
+      },
+      {
+        id: 4,
+        name: 'Node.js',
+        path: '/assets/nodeJS.png',
+      },
+    ],
+  },
+  {
+    title: 'MediGyaan AI - Medical Knowledge Chatbot',
+    desc: 'MediGyaan AI is an advanced AI-powered clinical assistance chatbot engineered to deliver hallucination-free answers to healthcare and pharmaceutical inquiries by grounding responses in verified medical textbooks and research literature.',
+    subdesc:
+      'Built with FastAPI, Groq API, Pinecone vector embeddings, and React.js. Utilizes reciprocal semantic search and hybrid NLP context ranking to extract and synthesize clinical guidelines accurately in real time.',
+    href: 'https://github.com/nipuntaneja05/MedBot',
+    texture: '/textures/project/MediGyaanAI.mp4',
+    logo: '/assets/medigyaan-logo.png',
+    logoStyle: {
+      backgroundColor: '#16213E',
+      border: '0.2px solid #1A2A52',
+      boxShadow: '0px 0px 60px 0px #2F67B64D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      {
+        id: 1,
+        name: 'FastAPI',
+        path: '/assets/fastapi.png',
+      },
+      {
+        id: 2,
+        name: 'Pinecone',
+        path: '/assets/pinecone.png',
+      },
+      {
+        id: 3,
+        name: 'Groq API',
+        path: '/assets/groq.png',
+      },
+      {
+        id: 4,
+        name: 'React',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 5,
+        name: 'NLP',
+        path: '/assets/nlp.png',
+      },
+    ],
+  },
+  {
+    title: 'Discord AI Community Role Manager',
+    desc: 'A smart community moderation and role orchestration agent that empowers online community managers to manage permissions and automated roles using natural-language instructions (e.g. "Grant Member role to active contributors with >20 messages").',
+    subdesc:
+      'Eliminates cumbersome slash commands and complex server bot dashboards. Built with Discord.js, Groq API (Llama 3 70B), TailwindCSS, and React.js to provide real-time rule execution and activity-triggered role synchronization.',
+    href: 'https://github.com/nipuntaneja05/Discord-role-bot',
+    texture: '/textures/project/project3.mp4',
+    logo: '/assets/discord-logo.jpeg',
+    logoStyle: {
+      backgroundColor: '#1E293B',
+      border: '0.2px solid #334155',
+      boxShadow: '0px 0px 60px 0px rgba(56, 189, 248, 0.3)',
+    },
+    spotlight: '/assets/spotlight3.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Discord.js',
+        path: '/assets/discord-logo.jpeg',
+      },
+      {
+        id: 2,
+        name: 'Groq API',
+        path: '/assets/groq.png',
+      },
+      {
+        id: 3,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 4,
+        name: 'TailwindCSS',
+        path: '/assets/tailwindcss.png',
+      },
+    ],
+  },
+];
+
+export const calculateSizes = (isSmall, isMobile, isTablet) => {
+  return {
+    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
+    deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
+    cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
+    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
+    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
+    targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
   };
-  
-  export const workExperiences = [
-    {
-      id: 1,
-      name: 'Grovio.ai',
-      pos: 'AI and Full stack developer.',
-      duration: 'March 2025- June 2025',
-      title: "Actively worked in Grovio.ai as an AI and full stack developer,particularly working on AI agents for automating online communities on different platforms like discord and telegram.Working on different agents along with machine learning models to automate tasks and make community management easier.Working under great professionals who have earlier worked in Uber,tiktok,Oracle was a lovely and learning experience.",
-      icon: '/assets/grovio-logo.jpeg',
-      animation: 'victory',
-    },
-    {
-      id: 2,
-      name: 'Requesto',
-      pos: 'Co-founder',
-      duration: 'June 2024- Dec 2024',
-      title: "I founded and ran Requesto as a startup during my 2nd and 3rd semesters, taking on the roles of both founder and developer. I independently handled in-house web and app development, scaling the platform to over 250 users. This journey provided me with invaluable learning experiences across various domains.",
-      icon: '/assets/project-logo1.png',
-      animation: 'clapping',
-    },
-    // {
-    //   id: 3,
-    //   name: 'Notion',
-    //   pos: 'Junior Web Developer',
-    //   duration: '2019 - 2020',
-    //   title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    //   icon: '/assets/notion.svg',
-    //   animation: 'salute',
-    // },
-  ];
+};
+
+export const workExperiences = [
+  {
+    id: 1,
+    name: 'Amazon',
+    pos: 'Applied Scientist Intern — Central Machine Learning Team',
+    duration: 'Jul 2026 – Present',
+    title:
+      'Working on an AI abuse-investigation platform where Bedrock LLM agents debate each flagged order before a judge agent rules; engineered a high-throughput DynamoDB result cache and audit log so repeat investigations require zero LLM calls. Built an SOP evaluation tool translating natural language into Athena SQL with deterministic rule validation, scored with an automated F1 threshold cutoff optimizer. Developed a per-order investigator chatbot with prompt caching and tool use. Co-authored 2 EACL 2027 Industry Track research submissions on Multi-Agent Debate and LLM-Compiled Decision Rules.',
+    icon: '/assets/Amazon-logo-.jpg',
+    animation: 'victory',
+  },
+  {
+    id: 2,
+    name: 'Grovio.ai',
+    pos: 'AI and Full-Stack Developer',
+    duration: 'Mar 2025 – Jun 2025',
+    title:
+      'Built and deployed LLM-powered moderation agents for Discord and Telegram communities that automated ~85% of repetitive operational tasks (spam filtering, toxicity detection, rule enforcement) and decreased member churn by 25%. Engineered full-stack data systems with a Python (Flask) backend and React.js frontend, powering real-time dashboards and analytics used for high-impact community growth decisions. Designed NLP pipelines for policy enforcement, sentiment analysis, and chat summarization, enabling groups to scale to 1,000+ members seamlessly.',
+    icon: '/assets/grovio-logo.jpeg',
+    animation: 'clapping',
+  },
+];
+
+export const publications = [
+  {
+    id: 1,
+    venue: 'ICLR 2027 Submission',
+    title: 'Beyond Single Positives: An Empirical Audit of Solution-Set Adaptation for Code Retrieval',
+    authors: 'Nipun Taneja et al.',
+    focus: 'Code Retrieval & Solution-Set Adaptation',
+    desc: 'Empirical audit evaluating solution-set adaptation and representation learning across dense and sparse code retrieval benchmarks.',
+  },
+  {
+    id: 2,
+    venue: 'EACL 2027 Industry Track',
+    title: 'Bounding the Cost of Grounded Multi-Agent Debate: An Adversarial System for Investigation Automation',
+    authors: 'Amazon Central Machine Learning Team',
+    focus: 'Multi-Agent Debate • Cost Optimization',
+    desc: 'Co-authored at Amazon. Adversarial Bedrock LLM debate system between investigator agents with DynamoDB cost-bounded caching.',
+  },
+  {
+    id: 3,
+    venue: 'EACL 2027 Industry Track',
+    title: 'Trust the Draft, Verify the Policy: A Deployed Loop for LLM-Compiled Decision Rules',
+    authors: 'Amazon Central Machine Learning Team',
+    focus: 'Policy Verification • Deterministic Decision Rules',
+    desc: 'Co-authored at Amazon. Deployed industrial loop where LLMs compile operational policies into deterministic verification engines.',
+  },
+];
+
+export const hackathonsAndHonors = [
+  {
+    id: 1,
+    title: 'Finshield Hackathon',
+    subtitle: 'IIT Hyderabad × Bank of India',
+    badge: 'Winner ($3000)',
+    desc: 'Built PRISM with Life Entropy Scoring via GNNs.',
+  },
+  {
+    id: 2,
+    title: 'Innov8 3.0',
+    subtitle: 'IIT Delhi × Eightfold.ai (2025)',
+    badge: 'Finalist',
+    desc: 'National finalist for LLM automation systems.',
+  },
+  {
+    id: 3,
+    title: 'Shield 1.0',
+    subtitle: 'BPRD — Law Enforcement (2025)',
+    badge: 'Finalist',
+    desc: 'National finalist for AI security & risk analysis tooling.',
+  },
+  {
+    id: 4,
+    title: 'Bharatiya Antariksh Hackathon',
+    subtitle: 'ISRO (2025)',
+    badge: 'Top 3',
+    desc: 'Ranked Top 3 nationwide for geospatial ML models.',
+  },
+];

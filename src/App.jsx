@@ -1,26 +1,28 @@
-import React from 'react'
-import Navbar from './sections/Navbar'
-import Hero from './sections/Hero'
-import About from './sections/About'
-import Project from './sections/Project'
-import Clients from './sections/Clients'
-import Contact from './sections/Contact'
-import Footer from './sections/Footer'
-import Experience from './sections/Experience'
+import React from 'react';
+import Navbar from './sections/Navbar';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Project from './sections/Project';
+import Experience from './sections/Experience';
+import ResearchAndHonors from './sections/ResearchAndHonors';
+import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 const App = () => {
   return (
-  <div> <main className="max-w-7xl mx-auto">
-    <Navbar />
-    <Hero />
-    <About />
-    <Project />
-    {/* <Clients/> */}
-    <Experience/>
-    <Contact/>
-    <Footer/>
-   </main></div>
-  )
-}
+    <div>
+      <main className="max-w-7xl mx-auto">
+        <Navbar />
+        <Hero />
+        <About />
+        <Project />
+        <Experience />
+        <ResearchAndHonors />
+        <Contact />
+        <Footer />
+      </main>
+    </div>
+  );
+};
 
-export default App
+export default App;

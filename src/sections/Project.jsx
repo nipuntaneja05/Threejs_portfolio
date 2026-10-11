@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber';
 import { Center, OrbitControls } from '@react-three/drei';
 
 import { myProjects } from '../constants/index.js';
+import useInView from '../hooks/useInView.js';
 import CanvasLoader from '../components/Loading.jsx';
 import DemoComputer from '../components/DemoComputer.jsx';
 
@@ -12,6 +13,7 @@ const projectCount = myProjects.length;
 
 const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
+  const [canvasRef, isInView] = useInView({ threshold: 0.05, rootMargin: '100px' });
 
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
@@ -30,7 +32,7 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="projects">
       <p className="head-text">My Selected Work</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
@@ -60,11 +62,12 @@ const Projects = () => {
             </div>
 
             <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
+              className="flex items-center gap-2 cursor-pointer text-white-600 hover:text-white transition-colors"
               href={currentProject.href}
               target="_blank"
               rel="noreferrer">
-              <p>Check Live Site</p>
+              <img src="/assets/github.svg" alt="github" className="w-4 h-4 object-contain invert brightness-0" />
+              <p>Github Link</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>
@@ -80,14 +83,18 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-          <Canvas>
+        <div ref={canvasRef} className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full overflow-hidden">
+          <Canvas
+            dpr={[1, 1.5]}
+            frameloop={isInView ? 'always' : 'never'}
+            gl={{ powerPreference: 'high-performance', antialias: false, alpha: true, stencil: false }}
+          >
             <ambientLight intensity={Math.PI} />
             <directionalLight position={[10, 10, 5]} />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
                 <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                  <DemoComputer texture={currentProject.texture} />
+                  <DemoComputer texture={currentProject.texture} isInView={isInView} />
                 </group>
               </Suspense>
             </Center>

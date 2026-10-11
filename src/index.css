@@ -4,8 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+html {
   scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+canvas {
+  touch-action: pan-y;
 }
 
 body {
